@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Próximamente Nueva Página! - RedFish</title>
+    
+    <!-- LÍNEA NUEVA: Favicon para la pestaña -->
+    <link rel="icon" href="redfish-logo.png" type="image/png">
+    
+    <!-- Importamos la fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Colores originales de RedFish */
+            --rojo-redfish: #df2a36;
+            --rojo-redfish-hover: #c0232e;
+            --fondo-body: #f8f9fa;
+            --fondo-card: #ffffff;
+            --texto-titulo: #df2a36;
+            --texto-medio: #333333;
+            --texto-gris: #555555;
+            --borde: #eeeeee;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--fondo-body);
+            color: var(--texto-medio);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Tarjeta principal estilo RedFish */
+        .card {
+            background: var(--fondo-card);
+            border: 1px solid var(--borde);
+            border-radius: 24px;
+            padding: 50px 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Contenedor de Logos */
+        .logos-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-width: 140px;
+            height: auto;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: var(--rojo-redfish);
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: var(--texto-titulo);
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--texto-gris);
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        /* Sección Mayorista Destacada */
+        .wholesale-section {
+            background: rgba(223, 42, 54, 0.04);
+            border-radius: 20px;
+            padding: 35px 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(223, 42, 54, 0.15);
+        }
+
+        .wholesale-title {
+            color: var(--rojo-redfish);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .exclusive-text {
+            font-size: 0.95rem;
+            color: var(--texto-medio);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .exclusive-text strong {
+            color: var(--rojo-redfish);
+            font-weight: 600;
+        }
+
+        /* Botón de teléfono RedFish */
+        .phone-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background-color: var(--rojo-redfish);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding: 16px 36px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(223, 42, 54, 0.3);
+        }
+
+        .phone-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(223, 42, 54, 0.4);
+            background-color: var(--rojo-redfish-hover);
+        }
+
+        .phone-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* Etiqueta de mínimo de compra */
+        .badge {
+            display: inline-block;
+            background: rgba(223, 42, 54, 0.1);
+            color: var(--rojo-redfish);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(223, 42, 54, 0.2);
+        }
+
+        /* Sección Minorista */
+        .retail-section {
+            padding-top: 25px;
+            border-top: 1px solid var(--borde);
+        }
+
+        .retail-title {
+            color: var(--texto-medio);
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .retail-text {
+            color: var(--texto-gris);
+            font-size: 0.95rem;
+        }
+
+        /* Ajustes Responsivos */
+        @media (max-width: 480px) {
+            .card { padding: 40px 20px; }
+            h1 { font-size: 1.8rem; }
+            .phone-btn { font-size: 1.3rem; padding: 14px 28px; }
+            .wholesale-section { padding: 25px 15px; }
+            .logo { max-width: 100px; }
+            .arrow { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <!-- Contenedor de Logos RedFish -> X-Fish -->
+        <div class="logos-wrapper">
+            <img src="redfish-logo.png" alt="RedFish Logo" class="logo">
+            <span class="arrow">➔</span>
+            <img src="logo_blanco.png" alt="X-Fish Logo" class="logo">
+        </div>
+
+        <h1>¡Próximamente nueva página!</h1>
+        <p class="subtitle">Nos unimos a X-Fish. Muy pronto vas a poder disfrutar de una <span class="highlight">nueva tienda online</span> con todo nuestro catálogo.</p>
+        
+        <!-- Bloque Mayorista -->
+        <div class="wholesale-section">
+            <span class="wholesale-title">Atención Mayorista</span>
+            <p class="exclusive-text">La atención y venta por teléfono ahora es <strong>exclusivamente mayorista</strong>.</p>
+            
+            <a href="tel:01139873673" class="phone-btn">
+                <svg class="phone-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                </svg>
+                011 3987-3673
+            </a>
+            
+            <br>
+            <div class="badge">Mínimo de compra: $1.000.000</div>
+        </div>
+        
+        <!-- Bloque Minorista -->
+        <div class="retail-section">
+            <span class="retail-title">Venta Minorista</span>
+            <p class="retail-text">Próximamente disponible solo a través de nuestra nueva web.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

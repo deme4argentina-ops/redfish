@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Próximamente Nueva Página! - RedFish</title>
     
-    <!-- LÍNEA NUEVA: Favicon para la pestaña -->
+    <!-- Favicon para la pestaña -->
     <link rel="icon" href="redfish-logo.png" type="image/png">
     
-    <!-- Importamos la fuente moderna -->
+    <!-- Fuente moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -84,13 +84,44 @@
         .subtitle {
             font-size: 1.1rem;
             color: var(--texto-gris);
-            margin-bottom: 35px;
+            margin-bottom: 25px;
             line-height: 1.6;
         }
 
         .highlight {
             color: #000000;
             font-weight: 600;
+        }
+
+        /* Botón de Catálogo */
+        .catalog-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #111827;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15rem;
+            padding: 14px 34px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .catalog-btn:hover {
+            background-color: #374151;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+            color: #ffffff;
+        }
+
+        .catalog-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
         }
 
         /* Sección Mayorista Destacada */
@@ -189,7 +220,8 @@
         @media (max-width: 480px) {
             .card { padding: 40px 20px; }
             h1 { font-size: 1.8rem; }
-            .phone-btn { font-size: 1.3rem; padding: 14px 28px; }
+            .catalog-btn { width: 100%; font-size: 1.05rem; padding: 14px 20px; }
+            .phone-btn { font-size: 1.3rem; padding: 14px 28px; width: 100%; }
             .wholesale-section { padding: 25px 15px; }
             .logo { max-width: 100px; }
             .arrow { font-size: 1.5rem; }
@@ -210,6 +242,16 @@
         <h1>¡Próximamente nueva página!</h1>
         <p class="subtitle">Nos unimos a X-Fish. Muy pronto vas a poder disfrutar de una <span class="highlight">nueva tienda online</span> con todo nuestro catálogo.</p>
         
+        <!-- Botón al Catálogo X-Fish -->
+        <div>
+            <a href="https://www.xfish.com.ar" class="catalog-btn" target="_blank" rel="noopener noreferrer">
+                <svg class="catalog-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/>
+                </svg>
+                Ver Catálogo
+            </a>
+        </div>
+
         <!-- Bloque Mayorista -->
         <div class="wholesale-section">
             <span class="wholesale-title">Atención Mayorista</span>
